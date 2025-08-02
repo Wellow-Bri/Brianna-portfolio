@@ -59,3 +59,34 @@ footer {
 section {
   animation: fadeIn 1s ease-in-out;
 }
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.project-buttons .github {
+  background-color: #0077b6;
+  color: white;
+}
+
+.project-buttons .github:hover {
+  background-color: #023e8a;
+}
+
+.project-buttons .demo {
+  background-color: #ff69b4;
+  color: white;
+}
+
+.project-buttons .demo:hover {
+  background-color: #c2185b;
+}
