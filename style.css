@@ -1,19 +1,29 @@
 /* style.css */
 
+:root {
+  --primary-color: #000000;
+  --secondary-color: #444444;
+  --accent-color: #cccccc;
+  --text-color: #f0f0f0;
+  --link-color: #999999;
+  --hover-color: #bbbbbb;
+  --background-color: #121212;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f4f6f9;
+  background: var(--background-color);
   margin: 0;
   padding: 0;
-  color: #333;
+  color: var(--text-color);
 }
 
 header {
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: linear-gradient(to right, #333, #111);
   color: white;
   padding: 2rem 1rem;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
@@ -25,11 +35,12 @@ section {
   padding: 2rem 1rem;
   max-width: 800px;
   margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
 }
 
 h2 {
-  color: #6a11cb;
-  border-bottom: 2px solid #ff7eb3;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--hover-color);
   padding-bottom: 0.5rem;
 }
 
@@ -43,8 +54,8 @@ ul {
 }
 
 footer {
-  background: #222;
-  color: #fff;
+  background: #1a1a1a;
+  color: var(--text-color);
   padding: 1rem;
   text-align: center;
   font-size: 0.9rem;
@@ -56,9 +67,6 @@ footer {
   100% { opacity: 1; transform: translateY(0); }
 }
 
-section {
-  animation: fadeIn 1s ease-in-out;
-}
 .project-buttons {
   display: flex;
   gap: 1rem;
@@ -74,19 +82,27 @@ section {
 }
 
 .project-buttons .github {
-  background-color: #0077b6;
+  background-color: #444;
   color: white;
 }
 
 .project-buttons .github:hover {
-  background-color: #023e8a;
+  background-color: #666;
 }
 
-.project-buttons .demo {
-  background-color: #ff69b4;
+project-buttons .demo {
+  background-color: #777;
   color: white;
 }
 
 .project-buttons .demo:hover {
-  background-color: #c2185b;
+  background-color: #999;
+}/* Link colors for dark background */
+a {
+  color: #48D1CC; /* Change this to your favorite from the list I gave */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00FFFF; /* Optional: brightens link on hover */
 }
